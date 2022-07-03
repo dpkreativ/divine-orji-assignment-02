@@ -28,9 +28,11 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let evenNumCount = 0;
+  arrayOfNumbers.forEach(el => el % 2 === 0 ? evenNumCount++ : null);
+  return evenNumCount;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
